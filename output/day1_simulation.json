@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-08-21T11:50:55.735254",
+  "devices_simulated": 12,
+  "simulation_logs": {
+    "PC1": [
+      "[11:50:33] PC1: Device starting up",
+      "[11:50:36] PC1: Requesting IP address",
+      "[11:50:37] PC1: Learning gateway MAC address"
+    ],
+    "PC2": [
+      "[11:50:33] PC2: Device starting up",
+      "[11:50:35] PC2: Requesting IP address",
+      "[11:50:36] PC2: Learning gateway MAC address",
+      "[11:50:38] PC2: Device operational"
+    ],
+    "PC3": [
+      "[11:50:33] PC3: Device starting up",
+      "[11:50:36] PC3: Requesting IP address",
+      "[11:50:37] PC3: Learning gateway MAC address",
+      "[11:50:37] PC3: Device operational",
+      "[11:50:47] PC3: Device operational"
+    ],
+    "PC4": [
+      "[11:50:33] PC4: Device starting up",
+      "[11:50:36] PC4: Requesting IP address",
+      "[11:50:37] PC4: Learning gateway MAC address",
+      "[11:50:47] PC4: Device operational"
+    ],
+    "PC5": [
+      "[11:50:33] PC5: Device starting up",
+      "[11:50:36] PC5: Requesting IP address",
+      "[11:50:37] PC5: Learning gateway MAC address",
+      "[11:50:37] PC5: Device operational"
+    ],
+    "PC6": [
+      "[11:50:33] PC6: Device starting up",
+      "[11:50:36] PC6: Requesting IP address",
+      "[11:50:37] PC6: Learning gateway MAC address",
+      "[11:50:45] PC6: Device operational",
+      "[11:50:49] PC6: Device operational"
+    ],
+    "R1": [
+      "[11:50:33] R1: Device starting up",
+      "[11:50:36] R1: OSPF process starting",
+      "[11:50:37] R1: Interfaces coming up",
+      "[11:50:39] R1: Device operational",
+      "[11:50:49] R1: Device operational",
+      "[11:50:51] R1: Device operational"
+    ],
+    "R2": [
+      "[11:50:33] R2: Device starting up",
+      "[11:50:35] R2: OSPF process starting",
+      "[11:50:36] R2: Interfaces coming up"
+    ],
+    "R3": [
+      "[11:50:33] R3: Device starting up",
+      "[11:50:35] R3: OSPF process starting",
+      "[11:50:36] R3: Interfaces coming up",
+      "[11:50:36] R3: Device operational"
+    ],
+    "S1": [
+      "[11:50:33] S1: Device starting up",
+      "[11:50:34] S1: Spanning Tree Protocol enabled",
+      "[11:50:35] S1: VLAN configuration loaded",
+      "[11:50:49] S1: Device operational"
+    ],
+    "S2": [
+      "[11:50:33] S2: Device starting up",
+      "[11:50:36] S2: Spanning Tree Protocol enabled",
+      "[11:50:37] S2: VLAN configuration loaded",
+      "[11:50:43] S2: Device operational"
+    ],
+    "S3": [
+      "[11:50:33] S3: Device starting up",
+      "[11:50:36] S3: Spanning Tree Protocol enabled",
+      "[11:50:37] S3: VLAN configuration loaded",
+      "[11:50:41] S3: Device operational"
+    ]
+  }
+}

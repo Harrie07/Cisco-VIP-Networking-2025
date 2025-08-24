@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-08-21T12:21:37.322516",
+  "summary": {
+    "overloaded_links": 0,
+    "alternative_paths_analyzed": 0,
+    "recommendations_generated": 1,
+    "load_distribution_strategies": 0
+  },
+  "detailed_analysis": {
+    "overloaded_links": [],
+    "alternative_paths": {},
+    "recommendations": [
+      {
+        "type": "optimization",
+        "recommendation": "Network utilization is healthy. Consider proactive load balancing for future growth.",
+        "priority": "low"
+      }
+    ],
+    "load_distribution_strategies": {}
+  }
+}

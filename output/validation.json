@@ -1,0 +1,393 @@
+{
+  "timestamp": "{}",
+  "validation_summary": {
+    "overall_score": 75.0,
+    "total_checks": 10,
+    "passed_checks": 6,
+    "failed_checks": 1,
+    "warnings": 3,
+    "critical_issues_count": 8,
+    "optimization_opportunities": 9
+  },
+  "detailed_results": {
+    "overall_score": 75.0,
+    "total_checks": 10,
+    "passed_checks": 6,
+    "failed_checks": 1,
+    "warnings": 3,
+    "critical_issues": [
+      {
+        "device": "R2",
+        "device_type": "router",
+        "issue": "router R2 is a single point of failure",
+        "recommendation": "Add redundant paths around R2",
+        "severity": "critical"
+      },
+      {
+        "device": "R3",
+        "device_type": "router",
+        "issue": "router R3 is a single point of failure",
+        "recommendation": "Add redundant paths around R3",
+        "severity": "critical"
+      },
+      {
+        "device": "R1",
+        "device_type": "router",
+        "issue": "router R1 is a single point of failure",
+        "recommendation": "Add redundant paths around R1",
+        "severity": "critical"
+      },
+      {
+        "link": "R1-R2",
+        "issue": "Link between R1 and R2 is a single point of failure",
+        "recommendation": "Add redundant links or alternative paths",
+        "severity": "warning"
+      },
+      {
+        "link": "R1-S1",
+        "issue": "Link between R1 and S1 is a single point of failure",
+        "recommendation": "Add redundant links or alternative paths",
+        "severity": "warning"
+      },
+      {
+        "link": "R2-R3",
+        "issue": "Link between R2 and R3 is a single point of failure",
+        "recommendation": "Add redundant links or alternative paths",
+        "severity": "warning"
+      },
+      {
+        "link": "R2-S2",
+        "issue": "Link between R2 and S2 is a single point of failure",
+        "recommendation": "Add redundant links or alternative paths",
+        "severity": "warning"
+      },
+      {
+        "link": "R3-S3",
+        "issue": "Link between R3 and S3 is a single point of failure",
+        "recommendation": "Add redundant links or alternative paths",
+        "severity": "warning"
+      }
+    ],
+    "warnings_list": [
+      {
+        "subnet": "10.0.12.0",
+        "issue": "Multiple gateways detected in subnet 10.0.12.0",
+        "gateways": [
+          {
+            "device": "R1",
+            "interface": "GigabitEthernet0/1",
+            "ip": "10.0.12.1"
+          },
+          {
+            "device": "R2",
+            "interface": "GigabitEthernet0/1",
+            "ip": "10.0.12.2"
+          }
+        ],
+        "severity": "warning",
+        "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+      },
+      {
+        "subnet": "172.16.12.0",
+        "issue": "Multiple gateways detected in subnet 172.16.12.0",
+        "gateways": [
+          {
+            "device": "R1",
+            "interface": "Serial0/0/0",
+            "ip": "172.16.12.1"
+          },
+          {
+            "device": "R2",
+            "interface": "Serial0/0/0",
+            "ip": "172.16.12.2"
+          }
+        ],
+        "severity": "warning",
+        "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+      },
+      {
+        "subnet": "10.0.23.0",
+        "issue": "Multiple gateways detected in subnet 10.0.23.0",
+        "gateways": [
+          {
+            "device": "R2",
+            "interface": "GigabitEthernet0/2",
+            "ip": "10.0.23.1"
+          },
+          {
+            "device": "R3",
+            "interface": "GigabitEthernet0/1",
+            "ip": "10.0.23.2"
+          }
+        ],
+        "severity": "warning",
+        "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+      },
+      {
+        "subnet": "172.16.23.0",
+        "issue": "Multiple gateways detected in subnet 172.16.23.0",
+        "gateways": [
+          {
+            "device": "R2",
+            "interface": "Serial0/0/1",
+            "ip": "172.16.23.1"
+          },
+          {
+            "device": "R3",
+            "interface": "Serial0/0/0",
+            "ip": "172.16.23.2"
+          }
+        ],
+        "severity": "warning",
+        "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+      },
+      {
+        "device": "S1",
+        "issue": "No spanning-tree configuration detected",
+        "severity": "warning"
+      },
+      {
+        "device": "S2",
+        "issue": "No spanning-tree configuration detected",
+        "severity": "warning"
+      },
+      {
+        "device": "S3",
+        "issue": "No spanning-tree configuration detected",
+        "severity": "warning"
+      },
+      {
+        "issue": "Network with 12 devices using only 2 VLANs",
+        "recommendation": "Implement network segmentation with additional VLANs",
+        "severity": "suggestion"
+      }
+    ],
+    "optimization_suggestions": [
+      "Standardize VLAN naming conventions across all devices",
+      "Verify default gateway configuration on all subnets",
+      "Enable and configure spanning-tree protocol on all switches",
+      "Consider implementing rapid spanning-tree (RSTP) for faster convergence",
+      "Ensure all endpoints have connectivity to network infrastructure",
+      "Optimize routing protocol selection based on network size and requirements",
+      "Implement proper network segmentation and security zones",
+      "Implement redundant paths and eliminate single points of failure",
+      "Monitor link utilization and plan capacity upgrades proactively"
+    ],
+    "detailed_results": {
+      "ip_conflicts": {
+        "status": "pass",
+        "issues": [],
+        "suggestions": []
+      },
+      "vlan_consistency": {
+        "status": "pass",
+        "issues": [],
+        "suggestions": [
+          "Standardize VLAN naming conventions across all devices"
+        ]
+      },
+      "gateway_validation": {
+        "status": "warning",
+        "issues": [
+          {
+            "subnet": "10.0.12.0",
+            "issue": "Multiple gateways detected in subnet 10.0.12.0",
+            "gateways": [
+              {
+                "device": "R1",
+                "interface": "GigabitEthernet0/1",
+                "ip": "10.0.12.1"
+              },
+              {
+                "device": "R2",
+                "interface": "GigabitEthernet0/1",
+                "ip": "10.0.12.2"
+              }
+            ],
+            "severity": "warning",
+            "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+          },
+          {
+            "subnet": "172.16.12.0",
+            "issue": "Multiple gateways detected in subnet 172.16.12.0",
+            "gateways": [
+              {
+                "device": "R1",
+                "interface": "Serial0/0/0",
+                "ip": "172.16.12.1"
+              },
+              {
+                "device": "R2",
+                "interface": "Serial0/0/0",
+                "ip": "172.16.12.2"
+              }
+            ],
+            "severity": "warning",
+            "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+          },
+          {
+            "subnet": "10.0.23.0",
+            "issue": "Multiple gateways detected in subnet 10.0.23.0",
+            "gateways": [
+              {
+                "device": "R2",
+                "interface": "GigabitEthernet0/2",
+                "ip": "10.0.23.1"
+              },
+              {
+                "device": "R3",
+                "interface": "GigabitEthernet0/1",
+                "ip": "10.0.23.2"
+              }
+            ],
+            "severity": "warning",
+            "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+          },
+          {
+            "subnet": "172.16.23.0",
+            "issue": "Multiple gateways detected in subnet 172.16.23.0",
+            "gateways": [
+              {
+                "device": "R2",
+                "interface": "Serial0/0/1",
+                "ip": "172.16.23.1"
+              },
+              {
+                "device": "R3",
+                "interface": "Serial0/0/0",
+                "ip": "172.16.23.2"
+              }
+            ],
+            "severity": "warning",
+            "suggestion": "Consider implementing HSRP/VRRP for gateway redundancy"
+          }
+        ],
+        "suggestions": [
+          "Verify default gateway configuration on all subnets"
+        ]
+      },
+      "mtu_mismatches": {
+        "status": "pass",
+        "issues": [],
+        "suggestions": []
+      },
+      "network_loops": {
+        "status": "warning",
+        "issues": [
+          {
+            "device": "S1",
+            "issue": "No spanning-tree configuration detected",
+            "severity": "warning"
+          },
+          {
+            "device": "S2",
+            "issue": "No spanning-tree configuration detected",
+            "severity": "warning"
+          },
+          {
+            "device": "S3",
+            "issue": "No spanning-tree configuration detected",
+            "severity": "warning"
+          }
+        ],
+        "suggestions": [
+          "Enable and configure spanning-tree protocol on all switches",
+          "Consider implementing rapid spanning-tree (RSTP) for faster convergence"
+        ]
+      },
+      "missing_components": {
+        "status": "pass",
+        "issues": [],
+        "suggestions": [
+          "Ensure all endpoints have connectivity to network infrastructure"
+        ]
+      },
+      "routing_optimization": {
+        "status": "pass",
+        "issues": [],
+        "suggestions": [
+          "Optimize routing protocol selection based on network size and requirements"
+        ]
+      },
+      "security_zones": {
+        "status": "warning",
+        "issues": [
+          {
+            "issue": "Network with 12 devices using only 2 VLANs",
+            "recommendation": "Implement network segmentation with additional VLANs",
+            "severity": "suggestion"
+          }
+        ],
+        "suggestions": [
+          "Implement proper network segmentation and security zones"
+        ]
+      },
+      "redundancy_analysis": {
+        "status": "fail",
+        "issues": [
+          {
+            "device": "R2",
+            "device_type": "router",
+            "issue": "router R2 is a single point of failure",
+            "recommendation": "Add redundant paths around R2",
+            "severity": "critical"
+          },
+          {
+            "device": "R3",
+            "device_type": "router",
+            "issue": "router R3 is a single point of failure",
+            "recommendation": "Add redundant paths around R3",
+            "severity": "critical"
+          },
+          {
+            "device": "R1",
+            "device_type": "router",
+            "issue": "router R1 is a single point of failure",
+            "recommendation": "Add redundant paths around R1",
+            "severity": "critical"
+          },
+          {
+            "link": "R1-R2",
+            "issue": "Link between R1 and R2 is a single point of failure",
+            "recommendation": "Add redundant links or alternative paths",
+            "severity": "warning"
+          },
+          {
+            "link": "R1-S1",
+            "issue": "Link between R1 and S1 is a single point of failure",
+            "recommendation": "Add redundant links or alternative paths",
+            "severity": "warning"
+          },
+          {
+            "link": "R2-R3",
+            "issue": "Link between R2 and R3 is a single point of failure",
+            "recommendation": "Add redundant links or alternative paths",
+            "severity": "warning"
+          },
+          {
+            "link": "R2-S2",
+            "issue": "Link between R2 and S2 is a single point of failure",
+            "recommendation": "Add redundant links or alternative paths",
+            "severity": "warning"
+          },
+          {
+            "link": "R3-S3",
+            "issue": "Link between R3 and S3 is a single point of failure",
+            "recommendation": "Add redundant links or alternative paths",
+            "severity": "warning"
+          }
+        ],
+        "suggestions": [
+          "Implement redundant paths and eliminate single points of failure"
+        ]
+      },
+      "capacity_validation": {
+        "status": "pass",
+        "issues": [],
+        "suggestions": [
+          "Monitor link utilization and plan capacity upgrades proactively"
+        ]
+      }
+    }
+  }
+}

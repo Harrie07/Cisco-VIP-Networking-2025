@@ -1,0 +1,186 @@
+{
+  "timestamp": "2025-08-21T12:21:37.314471",
+  "analysis_summary": {
+    "total_devices_analyzed": 12,
+    "total_links_analyzed": 14,
+    "bottlenecks_found": 0,
+    "recommendations_generated": 0
+  },
+  "detailed_analysis": {
+    "link_utilization": {
+      "PC1-PC2": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC1-R1": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC2-R1": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC3-PC4": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC3-R2": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC4-R2": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC5-PC6": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC5-R3": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "PC6-R3": {
+        "bandwidth_mbps": 100000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.015,
+        "status": "healthy"
+      },
+      "R1-R2": {
+        "bandwidth_mbps": 1544,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.9715025906735751,
+        "status": "healthy"
+      },
+      "R2-R3": {
+        "bandwidth_mbps": 1544,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 0.9715025906735751,
+        "status": "healthy"
+      },
+      "S1-R1": {
+        "bandwidth_mbps": 1000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 1.5,
+        "status": "healthy"
+      },
+      "S2-R2": {
+        "bandwidth_mbps": 1000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 1.5,
+        "status": "healthy"
+      },
+      "S3-R3": {
+        "bandwidth_mbps": 1000,
+        "traffic_mbps": 15.0,
+        "utilization_percent": 1.5,
+        "status": "healthy"
+      }
+    },
+    "device_load": {
+      "PC1": {
+        "total_regular_mbps": 2,
+        "total_peak_mbps": 5,
+        "applications": [
+          {
+            "application": "web_browsing",
+            "regular_load_mbps": 2,
+            "peak_load_mbps": 5,
+            "current_load_mbps": 5,
+            "priority": "medium"
+          }
+        ],
+        "current_load_mbps": 5
+      },
+      "PC2": {
+        "total_regular_mbps": 2,
+        "total_peak_mbps": 5,
+        "applications": [
+          {
+            "application": "web_browsing",
+            "regular_load_mbps": 2,
+            "peak_load_mbps": 5,
+            "current_load_mbps": 5,
+            "priority": "medium"
+          }
+        ],
+        "current_load_mbps": 5
+      },
+      "PC3": {
+        "total_regular_mbps": 2,
+        "total_peak_mbps": 5,
+        "applications": [
+          {
+            "application": "web_browsing",
+            "regular_load_mbps": 2,
+            "peak_load_mbps": 5,
+            "current_load_mbps": 5,
+            "priority": "medium"
+          }
+        ],
+        "current_load_mbps": 5
+      },
+      "PC4": {
+        "total_regular_mbps": 2,
+        "total_peak_mbps": 5,
+        "applications": [
+          {
+            "application": "web_browsing",
+            "regular_load_mbps": 2,
+            "peak_load_mbps": 5,
+            "current_load_mbps": 5,
+            "priority": "medium"
+          }
+        ],
+        "current_load_mbps": 5
+      },
+      "PC5": {
+        "total_regular_mbps": 2,
+        "total_peak_mbps": 5,
+        "applications": [
+          {
+            "application": "web_browsing",
+            "regular_load_mbps": 2,
+            "peak_load_mbps": 5,
+            "current_load_mbps": 5,
+            "priority": "medium"
+          }
+        ],
+        "current_load_mbps": 5
+      },
+      "PC6": {
+        "total_regular_mbps": 2,
+        "total_peak_mbps": 5,
+        "applications": [
+          {
+            "application": "web_browsing",
+            "regular_load_mbps": 2,
+            "peak_load_mbps": 5,
+            "current_load_mbps": 5,
+            "priority": "medium"
+          }
+        ],
+        "current_load_mbps": 5
+      }
+    },
+    "bottlenecks": [],
+    "recommendations": [],
+    "peak_scenarios": {}
+  }
+}

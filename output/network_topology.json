@@ -1,0 +1,845 @@
+{
+  "devices": {
+    "PC1": {
+      "device_name": "PC1",
+      "device_type": "endpoint",
+      "interfaces": [
+        {
+          "name": "FastEthernet0/0",
+          "ip_address": "192.168.10.10",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "down"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.10.10",
+        "8.8.4.4",
+        "8.8.8.8",
+        "192.168.10.1",
+        "255.255.255.0"
+      ]
+    },
+    "PC2": {
+      "device_name": "PC2",
+      "device_type": "endpoint",
+      "interfaces": [
+        {
+          "name": "FastEthernet0/0",
+          "ip_address": "192.168.10.11",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "down"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.10.11",
+        "8.8.4.4",
+        "8.8.8.8",
+        "192.168.10.1",
+        "255.255.255.0"
+      ]
+    },
+    "PC3": {
+      "device_name": "PC3",
+      "device_type": "endpoint",
+      "interfaces": [
+        {
+          "name": "FastEthernet0/0",
+          "ip_address": "192.168.20.10",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "down"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.20.1",
+        "8.8.4.4",
+        "8.8.8.8",
+        "192.168.20.10",
+        "255.255.255.0"
+      ]
+    },
+    "PC4": {
+      "device_name": "PC4",
+      "device_type": "endpoint",
+      "interfaces": [
+        {
+          "name": "FastEthernet0/0",
+          "ip_address": "192.168.20.11",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "down"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.20.11",
+        "192.168.20.1",
+        "8.8.4.4",
+        "8.8.8.8",
+        "255.255.255.0"
+      ]
+    },
+    "PC5": {
+      "device_name": "PC5",
+      "device_type": "endpoint",
+      "interfaces": [
+        {
+          "name": "FastEthernet0/0",
+          "ip_address": "192.168.30.10",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "down"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.30.10",
+        "8.8.4.4",
+        "8.8.8.8",
+        "192.168.30.1",
+        "255.255.255.0"
+      ]
+    },
+    "PC6": {
+      "device_name": "PC6",
+      "device_type": "endpoint",
+      "interfaces": [
+        {
+          "name": "FastEthernet0/0",
+          "ip_address": "192.168.30.11",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "down"
+        },
+        {
+          "name": "FastEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.30.1",
+        "8.8.4.4",
+        "8.8.8.8",
+        "192.168.30.11",
+        "255.255.255.0"
+      ]
+    },
+    "R1": {
+      "device_name": "R1",
+      "device_type": "router",
+      "interfaces": [
+        {
+          "name": "Loopback0",
+          "ip_address": "1.1.1.1",
+          "subnet_mask": "255.255.255.255",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/0",
+          "ip_address": "192.168.10.1",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1000000,
+          "status": "down"
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "ip_address": "10.0.12.1",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 10000000,
+          "status": "down"
+        },
+        {
+          "name": "Serial0/0/0",
+          "ip_address": "172.16.12.1",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1544,
+          "status": "down"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [
+        {
+          "protocol": "OSPF",
+          "process_id": 1
+        }
+      ],
+      "ip_addresses": [
+        "1.1.1.1",
+        "255.255.255.252",
+        "0.0.0.0",
+        "172.16.12.0",
+        "10.0.12.0",
+        "10.0.12.1",
+        "255.255.255.255",
+        "192.168.10.1",
+        "10.0.12.2",
+        "172.16.12.1",
+        "255.255.255.0",
+        "0.0.0.3"
+      ]
+    },
+    "R2": {
+      "device_name": "R2",
+      "device_type": "router",
+      "interfaces": [
+        {
+          "name": "Loopback0",
+          "ip_address": "2.2.2.2",
+          "subnet_mask": "255.255.255.255",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/0",
+          "ip_address": "192.168.20.1",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1000000,
+          "status": "down"
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "ip_address": "10.0.12.2",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 10000000,
+          "status": "down"
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "ip_address": "10.0.23.1",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 10000000,
+          "status": "down"
+        },
+        {
+          "name": "Serial0/0/0",
+          "ip_address": "172.16.12.2",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1544,
+          "status": "down"
+        },
+        {
+          "name": "Serial0/0/1",
+          "ip_address": "172.16.23.1",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1544,
+          "status": "down"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [
+        {
+          "protocol": "OSPF",
+          "process_id": 1
+        }
+      ],
+      "ip_addresses": [
+        "172.16.23.1",
+        "255.255.255.252",
+        "172.16.23.0",
+        "0.0.0.0",
+        "172.16.12.0",
+        "192.168.20.1",
+        "172.16.12.2",
+        "10.0.12.0",
+        "2.2.2.2",
+        "255.255.255.255",
+        "10.0.23.1",
+        "10.0.12.2",
+        "255.255.255.0",
+        "10.0.23.0",
+        "0.0.0.3"
+      ]
+    },
+    "R3": {
+      "device_name": "R3",
+      "device_type": "router",
+      "interfaces": [
+        {
+          "name": "Loopback0",
+          "ip_address": "3.3.3.3",
+          "subnet_mask": "255.255.255.255",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/0",
+          "ip_address": "192.168.30.1",
+          "subnet_mask": "255.255.255.0",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1000000,
+          "status": "down"
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "ip_address": "10.0.23.2",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 10000000,
+          "status": "down"
+        },
+        {
+          "name": "Serial0/0/0",
+          "ip_address": "172.16.23.2",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1544,
+          "status": "down"
+        },
+        {
+          "name": "Serial0/1/0",
+          "ip_address": "172.16.13.2",
+          "subnet_mask": "255.255.255.252",
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1544,
+          "status": "down"
+        }
+      ],
+      "vlans": [],
+      "routing_protocols": [
+        {
+          "protocol": "OSPF",
+          "process_id": 1
+        }
+      ],
+      "ip_addresses": [
+        "255.255.255.252",
+        "172.16.23.2",
+        "0.0.0.0",
+        "172.16.23.0",
+        "172.16.13.0",
+        "3.3.3.3",
+        "255.255.255.255",
+        "172.16.13.2",
+        "10.0.23.1",
+        "192.168.30.1",
+        "255.255.255.0",
+        "10.0.23.0",
+        "0.0.0.3",
+        "10.0.23.2"
+      ]
+    },
+    "S1": {
+      "device_name": "S1",
+      "device_type": "switch",
+      "interfaces": [
+        {
+          "name": "GigabitEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1000000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 10,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/3",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 10,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/4",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 20,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [
+        {
+          "id": 10,
+          "name": "LAN_USERS"
+        },
+        {
+          "id": 20,
+          "name": "MANAGEMENT"
+        },
+        {
+          "id": 99,
+          "name": "NATIVE_VLAN"
+        }
+      ],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.10.1",
+        "255.255.255.0",
+        "192.168.10.254",
+        "192.168.10.253"
+      ]
+    },
+    "S2": {
+      "device_name": "S2",
+      "device_type": "switch",
+      "interfaces": [
+        {
+          "name": "GigabitEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1000000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 10,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/3",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 10,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/4",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 20,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [
+        {
+          "id": 10,
+          "name": "LAN_USERS"
+        },
+        {
+          "id": 20,
+          "name": "MANAGEMENT"
+        },
+        {
+          "id": 99,
+          "name": "NATIVE_VLAN"
+        }
+      ],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.20.254",
+        "192.168.20.253",
+        "192.168.20.1",
+        "255.255.255.0"
+      ]
+    },
+    "S3": {
+      "device_name": "S3",
+      "device_type": "switch",
+      "interfaces": [
+        {
+          "name": "GigabitEthernet0/1",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": null,
+          "mtu": 1500,
+          "bandwidth": 1000000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 10,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/3",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 10,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        },
+        {
+          "name": "GigabitEthernet0/4",
+          "ip_address": null,
+          "subnet_mask": null,
+          "vlan": 20,
+          "mtu": 1500,
+          "bandwidth": 100000,
+          "status": "unknown"
+        }
+      ],
+      "vlans": [
+        {
+          "id": 10,
+          "name": "LAN_USERS"
+        },
+        {
+          "id": 20,
+          "name": "MANAGEMENT"
+        },
+        {
+          "id": 99,
+          "name": "NATIVE_VLAN"
+        }
+      ],
+      "routing_protocols": [],
+      "ip_addresses": [
+        "192.168.30.1",
+        "192.168.30.254",
+        "255.255.255.0",
+        "192.168.30.253"
+      ]
+    }
+  },
+  "links": {
+    "PC1-PC2": {
+      "device1": {
+        "device_id": "PC1",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.10.10",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "PC2",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.10.11",
+        "bandwidth": 100000
+      },
+      "subnet": "192.168.10.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC1-R1": {
+      "device1": {
+        "device_id": "PC1",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.10.10",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "R1",
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "192.168.10.1",
+        "bandwidth": 1000000
+      },
+      "subnet": "192.168.10.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC2-R1": {
+      "device1": {
+        "device_id": "PC2",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.10.11",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "R1",
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "192.168.10.1",
+        "bandwidth": 1000000
+      },
+      "subnet": "192.168.10.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC3-PC4": {
+      "device1": {
+        "device_id": "PC3",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.20.10",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "PC4",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.20.11",
+        "bandwidth": 100000
+      },
+      "subnet": "192.168.20.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC3-R2": {
+      "device1": {
+        "device_id": "PC3",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.20.10",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "R2",
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "192.168.20.1",
+        "bandwidth": 1000000
+      },
+      "subnet": "192.168.20.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC4-R2": {
+      "device1": {
+        "device_id": "PC4",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.20.11",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "R2",
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "192.168.20.1",
+        "bandwidth": 1000000
+      },
+      "subnet": "192.168.20.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC5-PC6": {
+      "device1": {
+        "device_id": "PC5",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.30.10",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "PC6",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.30.11",
+        "bandwidth": 100000
+      },
+      "subnet": "192.168.30.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC5-R3": {
+      "device1": {
+        "device_id": "PC5",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.30.10",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "R3",
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "192.168.30.1",
+        "bandwidth": 1000000
+      },
+      "subnet": "192.168.30.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "PC6-R3": {
+      "device1": {
+        "device_id": "PC6",
+        "interface": "FastEthernet0/0",
+        "ip_address": "192.168.30.11",
+        "bandwidth": 100000
+      },
+      "device2": {
+        "device_id": "R3",
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "192.168.30.1",
+        "bandwidth": 1000000
+      },
+      "subnet": "192.168.30.0",
+      "bandwidth_mbps": 100000,
+      "current_utilization": 0
+    },
+    "R1-R2": {
+      "device1": {
+        "device_id": "R1",
+        "interface": "Serial0/0/0",
+        "ip_address": "172.16.12.1",
+        "bandwidth": 1544
+      },
+      "device2": {
+        "device_id": "R2",
+        "interface": "Serial0/0/0",
+        "ip_address": "172.16.12.2",
+        "bandwidth": 1544
+      },
+      "subnet": "172.16.12.0",
+      "bandwidth_mbps": 1544,
+      "current_utilization": 0
+    },
+    "R2-R3": {
+      "device1": {
+        "device_id": "R2",
+        "interface": "Serial0/0/1",
+        "ip_address": "172.16.23.1",
+        "bandwidth": 1544
+      },
+      "device2": {
+        "device_id": "R3",
+        "interface": "Serial0/0/0",
+        "ip_address": "172.16.23.2",
+        "bandwidth": 1544
+      },
+      "subnet": "172.16.23.0",
+      "bandwidth_mbps": 1544,
+      "current_utilization": 0
+    },
+    "S1-R1": {
+      "device1": {
+        "device_id": "S1",
+        "interface": "mgmt"
+      },
+      "device2": {
+        "device_id": "R1",
+        "interface": "mgmt"
+      },
+      "bandwidth_mbps": 1000,
+      "current_utilization": 0
+    },
+    "S2-R2": {
+      "device1": {
+        "device_id": "S2",
+        "interface": "mgmt"
+      },
+      "device2": {
+        "device_id": "R2",
+        "interface": "mgmt"
+      },
+      "bandwidth_mbps": 1000,
+      "current_utilization": 0
+    },
+    "S3-R3": {
+      "device1": {
+        "device_id": "S3",
+        "interface": "mgmt"
+      },
+      "device2": {
+        "device_id": "R3",
+        "interface": "mgmt"
+      },
+      "bandwidth_mbps": 1000,
+      "current_utilization": 0
+    }
+  },
+  "summary": {
+    "total_devices": 12,
+    "routers": 3,
+    "switches": 3,
+    "endpoints": 6,
+    "total_links": 14,
+    "subnets": 5
+  }
+}

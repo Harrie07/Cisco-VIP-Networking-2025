@@ -1,0 +1,29 @@
+# Create .gitignore in root
+cat > .gitignore << EOF
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+
+# Temporary files
+*.tmp
+*.bak
+EOF
