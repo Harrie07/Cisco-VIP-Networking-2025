@@ -190,7 +190,7 @@ Run the comprehensive test suite:
 
 ```bash
 # Execute all tests
-python test_project.py
+python tests/test_project.py
 
 # Expected output:
 # ✅ Configuration Parser: Working
