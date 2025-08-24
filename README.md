@@ -50,8 +50,8 @@ The Cisco VIP Network Analysis Platform automatically generates network topology
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/cisco-vip-2025.git
-cd cisco-vip-2025
+git clone https://github.com/Harrie07/Cisco-VIP-Networking-2025.git
+cd Cisco-VIP-Networking-2025
 
 # Install required packages
 pip install -r requirements.txt
@@ -69,7 +69,7 @@ python src/visualizer.py
 python src/simulator.py
 
 # Execute test suite
-python test_project.py
+python tests/test_project.py
 ```
 
 ---
@@ -99,6 +99,7 @@ Cisco-VIP-Networking-2025/
 ├── config_files/               # Device configuration files
 │   ├── R1.txt
 │   ├── R2.txt
+|
 │   ├── S1.txt
 │   ├── S2.txt
 │   ├── PC1.txt
@@ -125,7 +126,7 @@ Cisco-VIP-Networking-2025/
 │
 ├── docs/                       # Documentation
 │   ├── technical_report.md
-│   ├── installation_guide.md
+│ 
 │   └── user_manual.md
 │
 ├── tests/                      # Test cases (optional)
